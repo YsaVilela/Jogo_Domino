@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./telaDeInicio/style/resetCss/reset.css">
+    <link rel="stylesheet" href="./telaDeInicio/style/style.css">
+    <link rel="stylesheet" href="./telaDeInicio/style/cardsSalas/card.css">
+    <link rel="stylesheet" href="./telaDeInicio/style/carrosel/carrosel.css">
+    <link rel="stylesheet" href="./telaDeInicio/style/modal/modal.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="div-superior">
+        <img class="logo" alt="logo de domino" src="./telaDeInicio/public/img/logoDomino.png">
+
+        <div class="dados">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./telaDeInicio/public/img/personagens/personagem1.svg" class="d-block w-100"
+                            alt="personagem1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem2.svg" class="d-block w-100"
+                            alt="personagem2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem3.svg" class="d-block w-100"
+                            alt="personagem3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem4.svg" class="d-block w-100"
+                            alt="personagem4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem5.svg" class="d-block w-100"
+                            alt="personagem5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem6.svg" class="d-block w-100"
+                            alt="personagem6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem7.svg" class="d-block w-100"
+                            alt="personagem7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem8.svg" class="d-block w-100"
+                            alt="personagem8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem9.svg" class="d-block w-100"
+                            alt="personagem9">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem10.svg" class="d-block w-100"
+                            alt="personagem10">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem11.svg" class="d-block w-100"
+                            alt="personagem11">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./telaDeInicio/public/img/personagens/personagem12.svg" class="d-block w-100"
+                            alt="personagem12">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="inserirNome">
+                <p>Digite seu nome</p>
+                <input type="text" name="nome" id="nome" placeholder="Escolha um nome">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cards">
+        <div class="card" id="Sala1">
+            <h3>Sala 1</h3>
+            <p>Comporta 4 jogadores</p>
+            <div class="quantidadeJogadores">0/4</div>
+            <button onclick="redirecionar(this)" class="btnEntrar" id="entrarSala">Entrar</button>
+        </div>
+
+        <div class="card" id="Sala2">
+            <h3>Sala 2</h3>
+            <p>Comporta 4 jogadores</p>
+            <div class="quantidadeJogadores">0/4</div>
+            <button onclick="redirecionar(this)" class="btnEntrar" id="entrarSala">Entrar</button>
+        </div>
+
+        <div class="card" id="Sala3">
+            <h3>Sala 3</h3>
+            <p>Comporta 4 jogadores</p>
+            <div class="quantidadeJogadores">0/4</div>
+            <button onclick="redirecionar(this)" class="btnEntrar" id="entrarSala">Entrar</button>
+        </div>
+
+        <div class="card" id="Sala4">
+            <h3>Sala 4</h3>
+            <p>Comporta 4 jogadores</p>
+            <div class="quantidadeJogadores">/4</div>
+            <button onclick="redirecionar(this)" class="btnEntrar" id="entrarSala">Entrar</button>
+        </div>
+    </div>
+
+    <button onclick="abrirModal()" class="btnCriarSala" id="entrarSala">Salas Personalizas</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./telaDeInicio/socket/documento-home.js" type="module"></script>
+    <script src="./telaDeInicio/socket/socket-front-home.js" type="module"></script>
+    <script src="./telaDeInicio/src/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

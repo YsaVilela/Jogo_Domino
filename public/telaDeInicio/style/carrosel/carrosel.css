@@ -1,0 +1,16 @@
+.carousel {
+    aspect-ratio: 1;
+    height: 20vh;
+    margin: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    height: 20vh;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000000;
+}
+

@@ -1,0 +1,12 @@
+{
+    "languages": {
+        "javascript": {
+            "eslint": {
+                "rules": {
+                    "no-unused-vars": "warn",
+                    "no-console": "off"
+                }
+            }
+        }
+    }
+}

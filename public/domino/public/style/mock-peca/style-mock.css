@@ -1,0 +1,141 @@
+
+.peca-mock {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: white;
+    height: 80px;
+    width: 35px;
+}
+
+.encaixavel {
+    background-color: aqua;
+}
+
+.girada-superior {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.girada {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+/* 
+.desgirada-superior {
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+} */
+
+.girada-inferior {
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease;
+}
+
+/* .desgirada-inferior {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+} */
+
+.linha-no-meio {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%; /* Ajuste conforme necessário para cobrir toda a largura da peça */
+    background-color: black; /* Cor da linha */
+    height: 2px;
+}
+
+.ponto-3 {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Ajuste as coordenadas conforme necessário */
+.ponto-3:nth-child(4) {
+    top: 5%;
+    left: 5%;
+    background-color: green;
+}
+/* ponto mais embaixo */
+.ponto-3:nth-child(2) { 
+    top: 30%;
+    left: 60%;
+    background-color: blue;
+}
+
+.ponto-3:nth-child(3) {
+    bottom: 70%;
+    right: 40%;
+    background-color: red;
+}
+
+
+
+.ponto-5 {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Ajuste as coordenadas conforme necessário */
+.ponto-5:nth-child(6) {
+    top: 70%;
+    right: 37%;
+    background-color: blueviolet;
+}
+
+.ponto-5:nth-child(9) {
+    top: 55%;
+    left: 8%;
+    background-color: yellow;
+}
+
+.ponto-5:nth-child(8) {
+    top: 83%;
+    left: 8%;
+    background-color: peru;
+}
+
+.ponto-5:nth-child(7) {
+    top: 55%;
+    left: 65%;
+    background-color: orange;
+}
+
+.ponto-5:nth-child(5) {
+    top: 83%;
+    left: 65%;
+    background-color: brown;
+}
+
+
+
+
+
+/* teste de borda para visualmente ver a area de inicio da curva */
+.borda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: calc(100% - 20vmin); /* Ajusta a altura para ocupar 10vmin para dentro dos lados */
+    width: calc(100% - 20vmin); /* Ajusta a largura para ocupar 10vmin para dentro dos lados */
+    border: 2px solid black;
+}
+
+.giro-vertical {
+        transform: rotate(180deg);
+}
+
+.giro-vertical-inferior {
+    transform: rotate(180deg);
+}

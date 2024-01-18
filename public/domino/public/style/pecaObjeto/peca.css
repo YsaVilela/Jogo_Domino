@@ -1,0 +1,91 @@
+.peca-domino, .peca-vazia {
+  position: relative;
+  width: 5vmin;
+  height: 10vmin;
+  border: 2px solid #000;
+  border-radius: 1vh;
+  background-color: white;
+  cursor: pointer;
+  margin: 3px;
+  background-color: #ebebed;
+  border-radius: 5px;
+}
+
+/* Adicione a sombra apenas à peça individual quando estiver em hover */
+.peca-domino:hover {
+  box-shadow: 0 0 3px 3px rgba(7, 62, 214, 0.685);
+}
+
+
+.linha-domino {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.metade-superior,
+.metade-inferior {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  padding: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metade-superior {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  padding: 0.5px;
+  overflow: hidden;
+}
+
+.metade-inferior {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  padding: 0.5px;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.ponto-de-domino {
+  width: 5px;
+  height: 6.25px;
+  background-color: black;
+  margin: 0;
+  border-radius: 2px;
+}
+
+.metade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meia-peca {
+  width: 100%;
+  height: 100%;
+}
+
+.tabela-pontos {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.tabela-pontos td {
+  text-align: center;
+  vertical-align: middle;
+}
